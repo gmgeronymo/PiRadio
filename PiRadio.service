@@ -1,0 +1,9 @@
+[Unit]
+Description=WebRadio
+[Service]
+ExecStart=/home/pi/src/PiRadio.py
+WorkingDirectory=/home/pi/src
+User=pi
+Restart=on-failure
+[Install]
+WantedBy=multi-user.target
